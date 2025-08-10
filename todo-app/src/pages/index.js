@@ -1,7 +1,14 @@
-import styles from "@/styles/Home.module.css";
+import TodoTemplate from "@/components/TodoTemplate";
+import TodoInsert from "@/components/TodoInsert";
+import TodoList from "@/components/TodoList";
 
 const App = () => {
-  return <div>Todo App을 만들자!</div>;
+  return (
+    <TodoTemplate>
+      <TodoInsert />
+      <TodoList />
+    </TodoTemplate>
+  );
 };
 
 export default App;
